@@ -19,3 +19,4 @@ def test_st_info():
     final_details = 'http://thetestingworldapi.com/api/studentsDetails/' + str(id[0])
     response = requests.get(final_details)
     print(response.text)
+    assert response.status_code == 450
